@@ -19,7 +19,8 @@
   ],
   "require": {
     "php": ">=7.4",
-    "payum-payrexx" : "^1.0"
+    "php-http/guzzle6-adapter": "^2.0",
+    "w-vision/payum-payrexx": "1.0.x-dev"
   },
   "autoload": {
     "psr-4": {
