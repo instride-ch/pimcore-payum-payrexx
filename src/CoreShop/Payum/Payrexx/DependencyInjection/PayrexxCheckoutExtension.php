@@ -17,18 +17,18 @@ declare(strict_types=1);
  *
  */
 
-namespace Wvision\Payum\PayrexxCheckoutBundle\CoreShop\Payum\PayrexxCheckout\DependencyInjection;
+namespace Wvision\Payum\PayrexxBundle\CoreShop\Payum\Payrexx\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 
-class PayrexxCheckoutExtension extends Extension
+class PayrexxExtension extends Extension
 {
     public function load(array $config, ContainerBuilder $container)
     {
-        $loader = new YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
-        $loader->load('services.yaml');
+        $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
+        $loader->load('services.yml');
     }
 }

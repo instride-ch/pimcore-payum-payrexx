@@ -16,17 +16,17 @@ declare(strict_types=1);
  *
  */
 
-namespace Wvision\Payum\PayrexxCheckoutBundle\CoreShop\Payum\PayrexxCheckout;
+namespace Wvision\Payum\PayrexxBundle\CoreShop\Payum\Payrexx;
 
 use Pimcore\Extension\Bundle\AbstractPimcoreBundle;
 use Pimcore\Extension\Bundle\Traits\PackageVersionTrait;
 
-class PayumPayrexxCheckoutBundle extends AbstractPimcoreBundle
+class PayumPayrexxBundle extends AbstractPimcoreBundle
 {
     use PackageVersionTrait;
 
     protected function getComposerPackageName(): string
     {
-        return 'w-vision/payum-payrexx-checkout-bundle';
+        return 'w-vision/payum-payrexx-bundle';
     }
 }

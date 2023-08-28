@@ -1,7 +1,7 @@
 {
-  "name": "w-vision/payum-payrexx-checkout-bundle",
+  "name": "w-vision/payum-payrexx-bundle",
   "type": "library",
-  "description": "CoreShop - Payrexx CheckoutBundle",
+  "description": "CoreShop - Payrexx Bundle",
   "keywords": [
     "coreshop",
     "payment",
@@ -22,14 +22,30 @@
     "php-http/guzzle6-adapter": "^2.0",
     "w-vision/payum-payrexx": "1.0.x-dev"
   },
+  "repositories": {
+    "w-vision/payum-payrexx": {
+      "type": "path",
+      "url": "../payum-payrexx",
+      "options": {
+        "symlink": true
+      }
+    }
+  },
   "autoload": {
     "psr-4": {
-      "Wvision\\Payum\\PayrexxCheckoutBundle\\": "src/"
+      "Wvision\\Payum\\PayrexxBundle\\": "src/"
     }
   },
   "extra": {
     "branch-alias": {
       "dev-main": "1.0-dev"
+    },
+    "pimcore": {
+      "bundles": [
+        "CoreShop\\Payum\\PayrexxCheckoutBundle"
+      ]
     }
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }

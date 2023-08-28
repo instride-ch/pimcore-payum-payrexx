@@ -1,4 +1,4 @@
-# Payum - Payrexx Checkout Bundle
+# Payum - Payrexx Bundle
 A Payum extension to provide [Payrexx](https://www.payrexx.com)
 payment integration.
 
@@ -6,5 +6,5 @@ payment integration.
 
 #### Via Composer
 ```bash
-$ composer require w-vision/payum-payrexx-checkout-bundle
+$ composer require coreshop/payum-payrexx-bundle
 ```

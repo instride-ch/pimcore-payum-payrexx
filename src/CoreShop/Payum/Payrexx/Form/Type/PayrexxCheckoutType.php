@@ -16,7 +16,7 @@ declare(strict_types=1);
  *
  */
 
-namespace Wvision\Payum\PayrexxCheckoutBundle\CoreShop\Payum\PayrexxCheckout\Form\Type;
+namespace Wvision\Payum\PayrexxBundle\CoreShop\Payum\Payrexx\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
@@ -24,27 +24,14 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\FormEvent;
 use Symfony\Component\Form\FormEvents;
-use Symfony\Component\Validator\Constraints\NotBlank;
 
-class PayrexxCheckoutType extends AbstractType
+class PayrexxType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('instance', TextType::class, [
-                'constraints' => [
-                    new NotBlank([
-                        'groups' => 'coreshop',
-                    ]),
-                ],
-            ])
-            ->add('secret', PasswordType::class, [
-                'constraints' => [
-                    new NotBlank([
-                        'groups' => 'coreshop',
-                    ]),
-                ],
-            ])
+            ->add('instance', TextType::class)
+            ->add('api_key', PasswordType::class)
             ->addEventListener(FormEvents::PRE_SET_DATA, static function (FormEvent $event) {
                 $data = $event->getData();
                 $data['payum.http_client'] = '@coreshop.payum.http_client';
