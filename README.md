@@ -6,5 +6,5 @@ payment integration.
 
 #### Via Composer
 ```bash
-$ composer require coreshop/payum-payrexx-bundle
+$ composer require w-vision/payum-payrexx-bundle
 ```

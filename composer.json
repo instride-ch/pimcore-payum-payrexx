@@ -45,7 +45,7 @@
     },
     "pimcore": {
       "bundles": [
-        "Wvision\\Payum\\Payrexx\\PayrexxPayrexxBundle"
+        "Wvision\\Payum\\Payrexx\\PayumPayrexxBundle"
       ]
     }
   },
