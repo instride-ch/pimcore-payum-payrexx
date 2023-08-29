@@ -36,7 +36,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Wvision\\Payum\\PayrexxBundle\\": "src/"
+      "Wvision\\Payum\\PayrexxBundle\\": "src/Wvision/Payum/Payrexx"
     }
   },
   "extra": {

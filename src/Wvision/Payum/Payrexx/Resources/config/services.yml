@@ -8,7 +8,7 @@ services:
     tags:
       - { name: payum.gateway_factory_builder, factory: payrexx }
 
-  Wvision\Payum\PayrexxBundle\Wvision\Payum\Payrexx\Form\Type\PayrexxType:
+  Wvision\Payum\Payrexx\Form\Type\PayrexxType:
     tags:
         - { name: coreshop.gateway_configuration_type, type: payrexx }
         - { name: form.type }

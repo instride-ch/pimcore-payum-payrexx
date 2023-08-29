@@ -17,7 +17,7 @@ declare(strict_types=1);
  *
  */
 
-namespace Wvision\Payum\PayrexxBundle\Wvision\Payum\Payrexx\DependencyInjection;
+namespace Wvision\Payum\Payrexx\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;

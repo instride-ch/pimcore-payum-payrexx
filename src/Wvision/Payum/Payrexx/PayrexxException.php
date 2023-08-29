@@ -16,7 +16,7 @@ declare(strict_types=1);
  *
  */
 
-namespace Wvision\Payum\PayrexxBundle\Wvision\Payum\Payrexx;
+namespace Wvision\Payum\Payrexx;
 
 class PayrexxException extends \Exception
 {

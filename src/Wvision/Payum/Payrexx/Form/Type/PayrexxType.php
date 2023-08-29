@@ -16,7 +16,7 @@ declare(strict_types=1);
  *
  */
 
-namespace Wvision\Payum\PayrexxBundle\Wvision\Payum\Payrexx\Form\Type;
+namespace Wvision\Payum\Payrexx\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;
