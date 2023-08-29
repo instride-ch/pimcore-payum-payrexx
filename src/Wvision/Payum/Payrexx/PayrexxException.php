@@ -16,10 +16,7 @@ declare(strict_types=1);
  *
  */
 
-namespace Wvision\Payum\PayrexxBundle\CoreShop\Payum\Payrexx;
-
-use Pimcore\Extension\Bundle\AbstractPimcoreBundle;
-use Pimcore\Extension\Bundle\Traits\PackageVersionTrait;
+namespace Wvision\Payum\PayrexxBundle\Wvision\Payum\Payrexx;
 
 class PayrexxException extends \Exception
 {

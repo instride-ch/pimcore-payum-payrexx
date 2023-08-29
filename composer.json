@@ -31,6 +31,9 @@
       }
     }
   },
+  "config": {
+    "bin-dir": "bin"
+  },
   "autoload": {
     "psr-4": {
       "Wvision\\Payum\\PayrexxBundle\\": "src/"
@@ -42,7 +45,7 @@
     },
     "pimcore": {
       "bundles": [
-        "CoreShop\\Payum\\PayrexxCheckoutBundle"
+        "Wvision\\Payum\\Payrexx\\PayrexxPayrexxBundle"
       ]
     }
   },

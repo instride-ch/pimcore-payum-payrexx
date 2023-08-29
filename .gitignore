@@ -1,40 +1,46 @@
-######################
-# Compiled source    #
-######################
-*.com
-*.class
-*.dll
-*.exe
-*.o
-*.so
+# Symfony default
+/.web-server-pid
+/app/config/parameters.yml
+/build/
+/phpunit.xml
+/web/bundles/
 
-######################
-# Packages           #
-######################
-# it's better to unpack these files and commit the raw source
-# git has its own built in compression methods
-*.7z
-*.dmg
-*.gz
-*.iso
-*.jar
+# Local config
+/.env
+!/app/config/local
+/app/config/local/*
+!app/config/local/.gitkeep
+#/assets/js/modules/route-mapping.js
 
-######################
-# Logs and databases #
-######################
-*.log
+# Pimcore
+/var/*
+!/var/.gitkeep
+!/var/classes/
+/var/classes/DataObject
 
-######################
-# Global             #
-######################
-.DS_*
-._*
+!/var/config
+/var/config/system.yml
+/var/config/debug-mode.php
+/var/config/maintenance.php
+
+# Project specific recommendations
+/var/config/tag-manager.php
+/var/config/reports.php
+
+/web/var/
+/web/sitemap*.xml
+
+# PHP-CS-Fixer
+/.php_cs
+/.php_cs.cache
+
+# Composer
+/vendor/
+
+# PhpStorm / IDEA
 .idea
-.cache/
-.config/
-ehthumbs.db
-Thumbs.db
-/node_modules
-.composer
-.bash_history
-.viminfo
+
+# Keep legacy paths ignored for easier migration
+.temp
+node_modules/
+web/build/

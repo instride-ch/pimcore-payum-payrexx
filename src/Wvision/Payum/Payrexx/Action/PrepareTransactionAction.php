@@ -16,7 +16,7 @@ declare(strict_types=1);
  *
  */
 
-namespace Wvision\Payum\PayrexxBundle\CoreShop\Payum\Payrexx\Action;
+namespace Wvision\Payum\PayrexxBundle\Wvision\Payum\Payrexx\Action;
 
 use CoreShop\Component\Core\Model\OrderInterface;
 use CoreShop\Component\Core\Model\OrderItemInterface;
