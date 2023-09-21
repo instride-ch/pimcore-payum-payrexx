@@ -1,6 +1,6 @@
 {
   "name": "w-vision/payum-payrexx-bundle",
-  "type": "library",
+  "type": "pimcore-bundle",
   "description": "CoreShop - Payrexx Bundle",
   "keywords": [
     "coreshop",
@@ -45,7 +45,7 @@
     },
     "pimcore": {
       "bundles": [
-        "Wvision\\Payum\\Payrexx\\PayumPayrexxBundle"
+        "Wvision\\Payum\\PayrexxBundle\\PayumPayrexxBundle"
       ]
     }
   },
