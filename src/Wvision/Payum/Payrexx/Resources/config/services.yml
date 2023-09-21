@@ -1,6 +1,4 @@
 services:
-  _defaults:
-    public: true
 
   payum.payrexx_gateway_factory:
     class: Payum\Core\Bridge\Symfony\Builder\GatewayFactoryBuilder
@@ -8,16 +6,7 @@ services:
     tags:
       - { name: payum.gateway_factory_builder, factory: payrexx }
 
-  Wvision\Payum\Payrexx\Form\Type\PayrexxType:
+  Wvision\Payum\PayrexxBundle\Form\Type\PayrexxType:
     tags:
         - { name: coreshop.gateway_configuration_type, type: payrexx }
         - { name: form.type }
-
-#  Wvision\Payum\PayrexxBundle\CoreShop\Payum\Payrexx\Action\PrepareTransactionAction:
-#    public: true
-#    tags:
-#      - {
-#        name: payum.action,
-#        factory: payrexx,
-#        alias: coreshop.payrexx.prepare_transaction
-#      }
