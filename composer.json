@@ -22,15 +22,6 @@
     "php-http/guzzle6-adapter": "^2.0",
     "w-vision/payum-payrexx": "1.0.x-dev"
   },
-  "repositories": {
-    "w-vision/payum-payrexx": {
-      "type": "path",
-      "url": "../payum-payrexx",
-      "options": {
-        "symlink": true
-      }
-    }
-  },
   "config": {
     "bin-dir": "bin"
   },
