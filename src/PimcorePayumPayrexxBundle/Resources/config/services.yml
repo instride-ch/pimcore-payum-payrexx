@@ -2,7 +2,7 @@ services:
 
     payum.payrexx_gateway_factory:
         class: Payum\Core\Bridge\Symfony\Builder\GatewayFactoryBuilder
-        arguments: [ Instride\Payum\Payrexx\PayumPayrexxGatewayFactory ]
+        arguments: [Instride\Payum\Payrexx\PayumPayrexxGatewayFactory]
         tags:
             - { name: payum.gateway_factory_builder, factory: payrexx }
 
