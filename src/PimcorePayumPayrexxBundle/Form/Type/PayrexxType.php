@@ -13,7 +13,7 @@ declare(strict_types=1);
  * @copyright 2024 instride AG (https://instride.ch)
  */
 
-namespace Instride\Bundle\PayumPayrexxBundle\Form\Type;
+namespace Instride\Bundle\PimcorePayumPayrexxBundle\Form\Type;
 
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\PasswordType;

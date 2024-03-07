@@ -27,7 +27,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Instride\\Bundle\\PayumPayrexxBundle\\": "src/PayumPayrexxBundle"
+      "Instride\\Bundle\\PimcorePayumPayrexxBundle\\": "src/PimcorePayumPayrexxBundle"
     }
   },
   "extra": {
@@ -36,7 +36,7 @@
     },
     "pimcore": {
       "bundles": [
-        "Instride\\Bundle\\PayumPayrexxBundle\\PayumPayrexxBundle"
+        "Instride\\Bundle\\PimcorePayumPayrexxBundle\\PimcorePayumPayrexxBundle"
       ]
     }
   },

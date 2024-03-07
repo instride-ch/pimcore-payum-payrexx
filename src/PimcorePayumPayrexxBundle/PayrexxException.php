@@ -13,7 +13,7 @@ declare(strict_types=1);
  * @copyright 2024 instride AG (https://instride.ch)
  */
 
-namespace Instride\Bundle\PayumPayrexxBundle;
+namespace Instride\Bundle\PimcorePayumPayrexxBundle;
 
 class PayrexxException extends \Exception
 {

@@ -13,12 +13,12 @@ declare(strict_types=1);
  * @copyright 2024 instride AG (https://instride.ch)
  */
 
-namespace Instride\Bundle\PayumPayrexxBundle;
+namespace Instride\Bundle\PimcorePayumPayrexxBundle;
 
 use Pimcore\Extension\Bundle\AbstractPimcoreBundle;
 use Pimcore\Extension\Bundle\Traits\PackageVersionTrait;
 
-class PayumPayrexxBundle extends AbstractPimcoreBundle
+class PimcorePayumPayrexxBundle extends AbstractPimcoreBundle
 {
     use PackageVersionTrait;
 

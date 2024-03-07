@@ -6,7 +6,7 @@ services:
         tags:
             - { name: payum.gateway_factory_builder, factory: payrexx }
 
-    Instride\Bundle\PayumPayrexxBundle\Form\Type\PayrexxType:
+    Instride\Bundle\PimcorePayumPayrexxBundle\Form\Type\PayrexxType:
         tags:
             - { name: coreshop.gateway_configuration_type, type: payrexx }
             - { name: form.type }
