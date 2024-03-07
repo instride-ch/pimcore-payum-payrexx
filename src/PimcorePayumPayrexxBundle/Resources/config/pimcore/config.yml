@@ -1,4 +1,4 @@
 core_shop_payment:
     pimcore_admin:
         js:
-            payrexx: /bundles/payumpayrexx/pimcore/js/payrexx.js
+            payrexx: /bundles/pimcorepayumpayrexx/pimcore/js/payrexx.js
