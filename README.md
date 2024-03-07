@@ -1,10 +1,8 @@
 # Payum - Payrexx Bundle
-A Payum extension to provide [Payrexx](https://www.payrexx.com)
-payment integration.
+A Payum extension to provide [Payrexx](https://www.payrexx.com) payment integration.
 
 ## Installation
 
-#### Via Composer
 ```bash
-$ composer require w-vision/payum-payrexx-bundle
+$ composer require instride/pimcore-payum-payrexx
 ```

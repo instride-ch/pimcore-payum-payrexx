@@ -1,5 +1,5 @@
 {
-  "name": "w-vision/payum-payrexx-bundle",
+  "name": "instride/pimcore-payum-payrexx",
   "type": "pimcore-bundle",
   "description": "CoreShop - Payrexx Bundle",
   "keywords": [
@@ -11,23 +11,23 @@
   "license": "GPL-3.0-or-later",
   "authors": [
     {
-      "name": "w-vision AG",
-      "email": "support@w-vision.ch",
-      "homepage": "https://w-vision.ch",
-      "role": "Web Development Agency"
+      "name": "instride AG",
+      "email": "connect@instride.ch",
+      "homepage": "https://instride.ch",
+      "role": "Digital Agency"
     }
   ],
   "require": {
     "php": ">=7.4",
     "php-http/guzzle6-adapter": "^2.0",
-    "w-vision/payum-payrexx": "1.0.x-dev"
+    "instride/payum-payrexx": "^1.0"
   },
   "config": {
     "bin-dir": "bin"
   },
   "autoload": {
     "psr-4": {
-      "Wvision\\Payum\\PayrexxBundle\\": "src/Wvision/Payum/Payrexx"
+      "Instride\\Bundle\\PayumPayrexxBundle\\": "src/PayumPayrexxBundle"
     }
   },
   "extra": {
@@ -36,7 +36,7 @@
     },
     "pimcore": {
       "bundles": [
-        "Wvision\\Payum\\PayrexxBundle\\PayumPayrexxBundle"
+        "Instride\\Bundle\\PayumPayrexxBundle\\PayumPayrexxBundle"
       ]
     }
   },
