@@ -19,7 +19,6 @@
   ],
   "require": {
     "php": ">=7.4",
-    "php-http/guzzle6-adapter": "^2.0",
     "instride/payum-payrexx": "^1.0"
   },
   "config": {
