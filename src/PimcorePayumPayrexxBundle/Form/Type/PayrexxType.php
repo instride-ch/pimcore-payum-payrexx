@@ -21,14 +21,27 @@ use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\Form\FormEvent;
 use Symfony\Component\Form\FormEvents;
+use Symfony\Component\Validator\Constraints\NotBlank;
 
 class PayrexxType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options): void
     {
         $builder
-            ->add('instance', TextType::class)
-            ->add('api_key', PasswordType::class)
+            ->add('instance', TextType::class, [
+                'constraints' => [
+                    new NotBlank([
+                        'groups' => 'coreshop',
+                    ]),
+                ],
+            ])
+            ->add('api_key', PasswordType::class, [
+                'constraints' => [
+                    new NotBlank([
+                        'groups' => 'coreshop',
+                    ]),
+                ],
+            ])
             ->addEventListener(FormEvents::PRE_SET_DATA, static function (FormEvent $event) {
                 $data = $event->getData();
                 $data['payum.http_client'] = '@coreshop.payum.http_client';

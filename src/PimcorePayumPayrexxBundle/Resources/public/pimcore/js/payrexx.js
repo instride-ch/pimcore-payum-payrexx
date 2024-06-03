@@ -1,4 +1,5 @@
 pimcore.registerNS('coreshop.provider.gateways.payrexx');
+
 coreshop.provider.gateways.payrexx = Class.create(coreshop.provider.gateways.abstract, {
   getLayout: function (config) {
     return [

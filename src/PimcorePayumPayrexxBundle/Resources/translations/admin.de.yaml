@@ -1,0 +1,4 @@
+payrexx:
+    config:
+        api_key: 'API Key'
+        instance: 'Instanz'
